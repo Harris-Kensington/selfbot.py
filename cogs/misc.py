@@ -376,7 +376,7 @@ class Misc:
             for x in range(number):
                 await ctx.channel.trigger_typing()
                 await ctx.send(member.mention)
-                await asyncio.sleep(1)
+                await asyncio.sleep(0.01)
         else:
             return await ctx.send(f"{ctx.author.mention}, I don't know how to use commands. Help!")
 
