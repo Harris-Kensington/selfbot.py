@@ -604,7 +604,7 @@ class Misc:
         async with ctx.session.get(f"http://artii.herokuapp.com/make?text={urllib.parse.quote_plus(text)}") as f:
             message = await f.text()
         if len('```' + message + '```') > 2000:
-            await ctx.send('Your ASCII is too long!')
+            await ctx.send('Your ASCII is too long, why not fuck callum instead?')
             return
         await ctx.send('```' + message + '```')
 
